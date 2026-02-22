@@ -13,7 +13,7 @@ def connect_db():
     return mysql.connector.connect(
         host="localhost",
         user="root",
-        password="KAR#14#vitthal",   # change this
+        password="yoursql password",   # change this
         database="fitness_ai"
     )
 
@@ -273,4 +273,5 @@ Snacks: Fruits
         if st.button("Logout"):
             st.session_state.logged_in = False
             st.session_state.username = ""
+
             st.rerun()
